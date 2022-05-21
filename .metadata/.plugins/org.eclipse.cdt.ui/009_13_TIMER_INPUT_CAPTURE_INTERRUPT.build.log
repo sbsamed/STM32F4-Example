@@ -1,0 +1,7 @@
+15:48:08 **** Incremental Build of configuration Debug for project 009_13_TIMER_INPUT_CAPTURE_INTERRUPT ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-objcopy.exe -O ihex 009_13_TIMER_INPUT_CAPTURE_INTERRUPT.elf 009_13_TIMER_INPUT_CAPTURE_INTERRUPT.hex 
+Info: Parallel threads used: 0
+
+15:48:08 Build Finished (took 305ms)
+

@@ -1,0 +1,31 @@
+#include "stm32f4xx.h"
+#include "stm32f4_discovery.h"
+
+GPIO_InitTypeDef GPIO_InitStruct;
+ADC_InitTypeDef ADC_InitStruct;
+ADC_CommonInitTypeDef  ADC_CommonInitStruct;
+
+
+
+int main(void)
+{
+
+
+  while (1)
+  {
+
+  }
+}
+
+
+
+void EVAL_AUDIO_TransferComplete_CallBack(uint32_t pBuffer, uint32_t Size){
+
+  return;
+}
+
+
+uint16_t EVAL_AUDIO_GetSampleCallBack(void){
+
+  return -1;
+}

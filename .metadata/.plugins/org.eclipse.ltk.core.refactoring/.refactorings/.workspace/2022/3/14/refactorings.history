@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;006_3_1_ADC_HAL&apos;" deleteContents="true" description="Delete resource &apos;006_3_1_ADC_HAL&apos;" element1="/006_3_1_ADC_HAL" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1648623321137"/>&#x0A;<refactoring comment="Rename resource &apos;007_STD_USART&apos; to &apos;007_0_STD_USART&apos;" description="Rename resource &apos;007_STD_USART&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/007_STD_USART" name="007_0_STD_USART" stamp="1648717267180" updateReferences="true"/>
+</session>

@@ -1,0 +1,10 @@
+13:02:05 **** Incremental Build of configuration Debug for project 0_04_teknofest_motor_uart_encoder_hal ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -o 0_04_teknofest_motor_uart_encoder_hal.elf Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc_ex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_adc.o Src\main.o Src\stm32f4xx_hal_msp.o Src\stm32f4xx_it.o Src\syscalls.o Src\system_stm32f4xx.o startup\startup_stm32f407xx.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../STM32F407VG_FLASH.ld -specs=nosys.specs -static -Wl,-Map=0_04_teknofest_motor_uart_encoder_hal.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+Src\stm32f4xx_it.o:(.bss.rx_count+0x0): multiple definition of `rx_count'
+Src\main.o:(.bss.rx_count+0x0): first defined here
+collect2.exe: error: ld returned 1 exit status
+Info: Parallel threads used: 1
+
+13:02:05 Build Finished (took 376ms)
+

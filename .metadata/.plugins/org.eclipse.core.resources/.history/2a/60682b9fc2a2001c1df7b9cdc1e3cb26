@@ -1,0 +1,52 @@
+
+#include "stm32f4xx.h"
+#include "stm32f4_discovery.h"
+
+GPIO_InitTypeDef GPIOInitStruct;
+int counter;
+void GPIO_Config(){
+
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB,ENABLE);
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD,ENABLE);
+
+	GPIOInitStruct.GPIO_Pin=GPIO_Pin_1;
+	GPIOInitStruct.GPIO_Mode=GPIO_Mode_IN;
+	GPIOInitStruct.GPIO_OType=GPIO_OType_PP;
+	GPIOInitStruct.GPIO_PuPd=GPIO_PuPd_DOWN;
+	GPIOInitStruct.GPIO_Speed=GPIO_Speed_100MHz;
+
+	GPIO_Init(GPIOB,&GPIOInitStruct);
+
+		GPIOInitStruct.GPIO_Pin=GPIO_Pin_12;
+		GPIOInitStruct.GPIO_Mode=GPIO_Mode_OUT;
+		GPIOInitStruct.GPIO_OType=GPIO_OType_PP;
+		GPIOInitStruct.GPIO_PuPd=GPIO_PuPd_NOPULL;
+		GPIOInitStruct.GPIO_Speed=GPIO_Speed_100MHz;
+
+		GPIO_Init(GPIOD,&GPIOInitStruct);
+
+
+}
+int main(void)
+{
+
+	GPIO_Config();
+
+  while (1)
+  {
+	  if ( GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_1) ){
+		  while(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_1) );
+	  }
+  }
+}
+
+
+void EVAL_AUDIO_TransferComplete_CallBack(uint32_t pBuffer, uint32_t Size){
+
+  return;
+}
+
+uint16_t EVAL_AUDIO_GetSampleCallBack(void){
+
+  return -1;
+}

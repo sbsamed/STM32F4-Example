@@ -1,0 +1,25 @@
+13:58:08 **** Incremental Build of configuration Debug for project 007_5_HAL_USART_TFT_SEND_REC2 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F407xx -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o ..\Src\main.c 
+..\Src\main.c: In function 'main':
+..\Src\main.c:111:18: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+   for (int i=0;i<strlen(rx_buffer);i++) {
+                  ^~~~~~
+..\Src\main.c:111:18: warning: incompatible implicit declaration of built-in function 'strlen'
+..\Src\main.c:111:18: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-atollic-eabi-gcc -o 007_5_HAL_USART_TFT_SEND_REC2.elf Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.o Src\main.o Src\stm32f4xx_hal_msp.o Src\stm32f4xx_it.o Src\syscalls.o Src\system_stm32f4xx.o startup\startup_stm32f407xx.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../STM32F407VG_FLASH.ld -specs=nosys.specs -static -Wl,-Map=007_5_HAL_USART_TFT_SEND_REC2.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\Tools\arm-atollic-reports.jar sizeinfo list 007_5_HAL_USART_TFT_SEND_REC2.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   7792	     20	   1744	   9556	   2554	007_5_HAL_USART_TFT_SEND_REC2.elf
+Print size information done
+Generate listing file
+Output sent to: 007_5_HAL_USART_TFT_SEND_REC2.list
+Generate listing file done
+Generate build reports done
+arm-atollic-eabi-objcopy.exe -O ihex 007_5_HAL_USART_TFT_SEND_REC2.elf 007_5_HAL_USART_TFT_SEND_REC2.hex 
+Info: Parallel threads used: 1
+
+13:58:09 Build Finished (took 1s.479ms)
+

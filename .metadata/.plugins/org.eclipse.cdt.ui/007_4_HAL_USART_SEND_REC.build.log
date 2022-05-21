@@ -1,0 +1,7 @@
+12:16:39 **** Incremental Build of configuration Debug for project 007_4_HAL_USART_SEND_REC ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-objcopy.exe -O ihex 007_4_HAL_USART_SEND_REC.elf 007_4_HAL_USART_SEND_REC.hex 
+Info: Parallel threads used: 0
+
+12:16:39 Build Finished (took 186ms)
+

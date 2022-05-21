@@ -1,0 +1,7 @@
+11:51:39 **** Incremental Build of configuration Debug for project 009_5_EXT_TRIG_MODE1_TIMER_HAL ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-objcopy.exe -O ihex 009_5_EXT_TRIG_MODE1_TIMER_HAL.elf 009_5_EXT_TRIG_MODE1_TIMER_HAL.hex 
+Info: Parallel threads used: 0
+
+11:51:39 Build Finished (took 339ms)
+

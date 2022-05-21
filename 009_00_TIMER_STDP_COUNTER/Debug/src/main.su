@@ -1,0 +1,5 @@
+main.c:9:6:TIMER_Config	8	static
+main.c:25:6:GPIO_Config	8	static
+main.c:39:5:main	8	static
+main.c:60:6:EVAL_AUDIO_TransferComplete_CallBack	16	static
+main.c:65:10:EVAL_AUDIO_GetSampleCallBack	4	static
