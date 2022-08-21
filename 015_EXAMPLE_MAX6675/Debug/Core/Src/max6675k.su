@@ -1,0 +1,2 @@
+max6675k.c:11:9:MAX6675_RedRegister	24	static
+max6675k.c:29:7:MAX6675_ReadTemperature	24	static

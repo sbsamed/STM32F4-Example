@@ -1,0 +1,7 @@
+main.c:75:5:buffersize	24	static
+main.c:82:6:bufferclear	16	static
+main.c:94:5:main	8	static
+main.c:144:6:SystemClock_Config	88	static
+main.c:188:13:MX_SPI1_Init	8	static
+main.c:226:13:MX_GPIO_Init	40	static
+main.c:255:6:Error_Handler	4	static
